@@ -1,0 +1,103 @@
+<head>
+  <!-- headタグには文字のエンコード、タイトル、読み込むCSSを書く。 -->
+  <meta charset="utf-8">
+  <title>"テスト用のやつ"</title>
+  <link rel="style" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"> </script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+</head>
+
+<body>
+  <!-- これはメモで、打っても表示されない -->
+  <div class="header">
+    <h1>テスト用のやつ</h1>
+    <h2>ここで学べるもの</h2>
+    <ul>
+      <li>h1</li>
+      <li>h2</li>
+      <li>p</li>
+      <li>ul/oi</li>
+      <li>css</li>
+      <li>class</li>
+    </ul>
+    <h2>上の「html」や「CSS」を押すとコードがみられるよ</h2>
+    <h3>「Result」を押すと元に戻るよ</h3>
+  </div>
+  <video data-name="video-content" playsinline="" src="blob:https://www.nicovideo.jp/f2283ded-4082-44c5-8fed-b329451f5f8c" style="pointer-events: none; object-fit: contain; width: 100%; height: 100%; aspect-ratio: 16 / 9; position: absolute; top: 0px; left: 0px; z-index: 1; transition: transform 1s; display: block; transform: none;"></video>
+  <div class="main">
+    <!-- divはグループ、classはグループ名。 -->
+    <h1>HelloWorld</h1>
+    <!-- h1は見出し -->
+    <h2>HelloWorld</h2>
+    <!-- hシリーズはh1からh6まであって数が大きくなるほど文字が小さくなる -->
+    <p>えへへ</p>
+    <!-- pは文が打てる -->
+    <a href="リンク先">文</a>
+    <!-- aはいわゆるハイパーリンクで、書いてあるとおり。 -->
+    <br>
+    <br>
+    <a class="btn" href="https://id.aakyuk.xyz"><span>詳しく</span><span>GO!</span></a>
+    <!-- 回転するボタン。 -->
+    <ul>
+      <li>あ</li>
+      <li>い</li>
+      <li>う</li>
+      <li>え</li>
+      <li>お</li>
+    </ul>
+    <!-- 上のはいわゆる箇条書き。ちなみに<ul>を<ol>にすると点が数字になる。 -->
+    <!-- <li>は「子要素」といって色んなとこに出てくる。 -->
+    <!-- ちなみに、CSS側でh1とaは赤、h2は青、h3とpは緑、ulは紫にしてる。 -->
+
+    <h4>what!? why!?</h4>
+    <!-- CSS側からフォントを指定しないとブラウザ側が設定したフォントで表示される。 -->
+
+    <img src="https://pbs.twimg.com/profile_images/874463635950551040/IhlhyWsq_400x400.jpg" alt="グーグルのロゴ" width="100" height="100">
+    <!-- imgは画像を表示させるタグ。srcにがぞうのリンク、altに代替テキスト、widthとheightはそれぞれ幅と高さ。-->
+
+    <img src="https://pbs.twimg.com/profile_images/874463635950551040/IhlhyWsq_400x400.jpg" alt="グーグルのロゴ2" width="200" height="100">
+    <!-- ちなみに、画像のサイズは縦横比を元画像と同じにしないと横や縦に伸びるから注意。 -->
+
+    <h2><span>もし</span>自殺したいならやめたほうがいいと思うよ。</h2>
+    <!-- h1とかpのタグ中に一部分だけ文字を変えたいときは、<span>で囲ってあげるとそこだけ指定できる。spanにもclassは指定できる。-->
+
+    <p class="ud">WEBから持ってきたフォントも適用できる</p>
+
+  </div>
+
+  <div class="footer">
+    <h2>
+      以上！！！
+    </h2>
+
+    <a href="scratch.mit.edu/user/aitan_aitan">あいきのscratch</a>
+    <a href="https://drive.google.com/drive/folders/17SO258L0ZT2zwBAJllv36NZHnFU45GLz?usp=sharing">僕がpythonでプログラミングしたゲーム系のやつ</a>
+
+    <p></p>
+
+    <textarea cols="50" rows="10" wrap="on" readonly>日記
+    12/12 ピアノ行きたくないよ〜
+    ほんとに行きたくない〜
+    でもなんかやっといたほうがいい気がする〜
+    どうしよ〜
+    
+    12/14 明日は誕生日だけど、
+    地震が起こるかもだってよ。
+    やだ〜
+    
+    12/20 地震起こんなかった。良かった〜
+    ついに二学期もあと数日！
+    頑張るぞ〜
+    
+    4/28 中学校にもだいぶ慣れて、
+    吹奏楽部のA,Sax.もなれた。
+    フレッシュコンサート頑張るぞー
+    
+    8/19 二学期スタートが8/26。
+    今日は8/19。
+    宿題に全く手を付けていない。</textarea>
+
+  </div>
+</body>
+
+</html>
