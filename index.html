@@ -2,7 +2,134 @@
   <!-- headタグには文字のエンコード、タイトル、読み込むCSSを書く。 -->
   <meta charset="utf-8">
   <title>テスト用のやつ</title>
-  <link rel="style" href="test/style.css">
+  <style>
+    /* これはメモで、打っても反映されない */
+h1 {
+  color: red;
+  font-family: sans;
+}
+/* colorが色、font-familyがフォント。指定しないとブラウザ設定になる */
+h2 {
+  color: blue;
+  font-family: sans;
+}
+
+h3 {
+  color: green;
+  font-family: sans;
+}
+
+p {
+  color: green;
+  font-family: sans;
+}
+
+a {
+  color: red;
+  font-family: sans;
+}
+
+ul {
+  color: purple;
+  font-family: sans;
+}
+
+body {
+  color: black;
+}
+
+.header {
+  padding: 20px;
+  background-color: yellow;
+  /* .~~でクラスを指定。paddingは隙間。background-colorは背景色。 */
+}
+
+.footer {
+  color: red;
+  padding: 20px;
+  background-color: yellow;
+}
+/* .~~(クラス名) **(タグ)と指定するとクラスの中のタグを指定できる。 */
+
+span {
+  color: blue;
+  font-size: 50px;
+}
+
+.ud {
+  font-family: UD-N;
+}
+
+@font-face {
+  font-family: "UD-B";
+  src: url("../BIZUDPGothic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UD-N";
+  src: url("../BIZUDPGothic-Regular.ttf") format("truetype");
+}
+
+.aakyukid {
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 2px solid #0398fc;
+}
+
+button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.btn {
+  display: inline-block; /* 改行なしのブロック要素 */
+  position: relative; /* 相対位置指定 */
+  width: 200px; /* 横幅 */
+  height: 60px; /* 高さ */
+  text-align: center; /* 水平方向は中央揃え */
+  line-height: 56px; /* 行の高さ */
+}
+.btn span {
+  display: block; /* ブロック要素 */
+  position: absolute; /* 親要素の左上を基準位置 */
+  width: 100%; /* 横幅 */
+  height: 100%; /* 高さ */
+  border: 2px solid #333; /* 罫線 */
+  transform-style: preserve-3d; /* 重なりを3Dで表示 */
+  transition: 0.5s; /* 変化時間 */
+}
+.btn span:nth-child(1) {
+  background-color: #ffffff; /* 触れてないときのボタンの色 */
+  color: #6666ff; /* 触れてないときの文字の色 */
+  transform: rotateX(0deg); /* 横軸の回転なし */
+  transform-origin: 0 50% -30px; /* transformの起点 */
+}
+.btn span:nth-child(2) {
+  background-color: #6666ff; /* 触れたときのボタンの色 */
+  color: #ffffff; /* 触れたときの文字の色 */
+  transform: rotateX(-90deg); /* 横軸で前方に90度回転 */
+  transform-origin: 0 50% -30px; /* transformの起点 */
+}
+.btn:hover span:nth-child(1) {
+  transform: rotateX(90deg); /* 横軸で90度回転 */
+}
+.btn:hover span:nth-child(2) {
+  transform: rotateX(0deg); /* 横軸の回転なし */
+}
+  </style>
   <meta name="description" content="テストですよこんなの">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"> </script>
   <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
